@@ -9,7 +9,7 @@ video_path = '/Users/lasyaedunuri/Documents/AML/matchCutting/ToKillAMockingBird.
 print("Initializing video manager...")
 video_manager = VideoManager([video_path])
 scene_manager = SceneManager()
-scene_manager.add_detector(ContentDetector(threshold=13.0))
+scene_manager.add_detector(ContentDetector(threshold=7.0))
 
 # Downscale for faster processing
 print("Setting downscale factor for faster processing...")
