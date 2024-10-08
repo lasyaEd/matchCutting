@@ -1,5 +1,6 @@
 from scenedetect import VideoManager, SceneManager
 from scenedetect.detectors import ContentDetector
+import pickle
 
 # Path to the video file
 video_path = '/Users/lasyaedunuri/Documents/AML/matchCutting/ToKillAMockingBird.mp4'
@@ -33,3 +34,10 @@ else:
 # Print each scene's start and end time
 for i, scene in enumerate(scene_list):
     print(f"Scene {i}: Start {scene[0].get_timecode()}, End {scene[1].get_timecode()}")
+
+
+# Save the scene list to a file using Pickle
+with open('scene_list.pkl', 'wb') as f:
+    pickle.dump(scene_list, f)
+
+print("Scene list saved to 'scene_list.pkl'")
