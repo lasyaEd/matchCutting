@@ -54,21 +54,7 @@ This script loads scene boundaries from `scene_list.pkl` and saves the middle fr
 
 ---
 
-### 4. Optical Flow Comparison: `compare_optical_flow.py`
-
-`compare_optical_flow.py` compares optical flow images by calculating cosine similarity between flattened flow representations to identify similar motions.
-
-**Functionality**:
-- **Image Reading**: Loads optical flow images from `flow_folder`.
-- **Flattening and Comparison**: Flattens images and calculates cosine similarity.
-- **Similarity Detection**: Flags similar images based on a defined threshold.
-
-**Use Cases**:
-- Motion analysis, anomaly detection, and quality control for optical flow data.
-
----
-
-### 5. Optical Flow Representation: `optical_flow_representation.py`
+### 4. Optical Flow Representation: `optical_flow_representation.py`
 
 This script generates and visualizes optical flow representations from video frames, enabling the analysis of motion between consecutive frames.
 
@@ -79,6 +65,20 @@ This script generates and visualizes optical flow representations from video fra
 
 **Use Cases**:
 - Analyzing motion patterns, understanding object trajectories, and identifying key motion events within videos.
+
+---
+
+### 5. Optical Flow Comparison: `compare_optical_flow.py`
+
+`compare_optical_flow.py` compares optical flow images by calculating cosine similarity between flattened flow representations to identify similar motions.
+
+**Functionality**:
+- **Image Reading**: Loads optical flow images from `flow_folder`.
+- **Flattening and Comparison**: Flattens images and calculates cosine similarity.
+- **Similarity Detection**: Flags similar images based on a defined threshold.
+
+**Use Cases**:
+- Motion analysis, anomaly detection, and quality control for optical flow data.
 
 ---
 
