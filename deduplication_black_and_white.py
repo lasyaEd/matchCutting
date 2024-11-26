@@ -46,7 +46,7 @@ for image_file in scene_images:
 embeddings = np.array(embeddings)
 
 # Threshold for cosine similarity - scenes with similarity above this are considered duplicates
-similarity_threshold = 0.9
+similarity_threshold = 1.0
 
 # Compare embeddings using cosine similarity and find near-duplicates
 to_remove = set()
